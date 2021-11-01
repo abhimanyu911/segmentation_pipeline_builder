@@ -65,7 +65,7 @@ def process_path(image_path, mask_path):
     img = tf.io.read_file(image_path)
     
     #decode using jpeg format
-    img = tf.image.decode_jpeg(img, channels=1)
+    img = tf.image.decode_png(img, channels=3)
     
     #convert to float values in [0, 1]
     img = tf.image.convert_image_dtype(img, tf.float32)
