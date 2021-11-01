@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: dataset-pipeline-builder-for-segmentation
+Version: 0.0.1
+Summary: A dataset pipeline builder for semantic image segmentation
+Home-page: UNKNOWN
+Author: Abhimanyu Borthakur
+Author-email: abhimanyuborthakur@hotmail.com
+License: MIT
+Description: This is a library with one module to help you build a tf.data Dataset pipeline for the purpose of semantic image segmentation.
+        
+        Change Log
+        ==========
+        
+        0.0.1 (02/11/2021)
+        -------------------
+        - First Release
+Keywords: dataset builder
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
