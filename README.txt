@@ -1,1 +1,2 @@
 This is a library with one module to help you build a tf.data Dataset pipeline for the purpose of semantic image segmentation.
+Refer 'demo.ipynb' at https://github.com/abhimanyu911/segmentation_pipeline_builder for instructions 
