@@ -20,5 +20,5 @@ setup(
   classifiers=classifiers,
   keywords='dataset builder', 
   packages=find_packages(),
-  install_requires=['tensorflow', 'matplotlib', 'os',] 
+  install_requires=[] 
 )
