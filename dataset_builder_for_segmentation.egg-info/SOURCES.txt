@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICSENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+dataset_builder_for_segmentation/__init__.py
+dataset_builder_for_segmentation.egg-info/PKG-INFO
+dataset_builder_for_segmentation.egg-info/SOURCES.txt
+dataset_builder_for_segmentation.egg-info/dependency_links.txt
+dataset_builder_for_segmentation.egg-info/top_level.txt
