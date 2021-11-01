@@ -7,9 +7,4 @@ dataset_pipeline_builder_for_segmentation/__init__.py
 dataset_pipeline_builder_for_segmentation.egg-info/PKG-INFO
 dataset_pipeline_builder_for_segmentation.egg-info/SOURCES.txt
 dataset_pipeline_builder_for_segmentation.egg-info/dependency_links.txt
-dataset_pipeline_builder_for_segmentation.egg-info/requires.txt
 dataset_pipeline_builder_for_segmentation.egg-info/top_level.txt
-pipeline_builder.egg-info/SOURCES.txt
-pipeline_builder.egg-info/dependency_links.txt
-pipeline_builder.egg-info/requires.txt
-pipeline_builder.egg-info/top_level.txt
