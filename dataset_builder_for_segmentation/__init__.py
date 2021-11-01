@@ -84,4 +84,3 @@ def preprocess(image, mask):
     mask = tf.image.resize(mask, output_size, method='nearest')
 
     return image, mask
-
