@@ -9,7 +9,7 @@ classifiers = [
 ]
 
 setup(
-  name='dataset_pipeline_builder_for_segmentation',
+  name='dataset_builder_for_segmentation',
   version='0.0.1',
   description='A dataset pipeline builder for semantic image segmentation',
   long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
