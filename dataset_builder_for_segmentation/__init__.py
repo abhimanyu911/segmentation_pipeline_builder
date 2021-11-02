@@ -2,7 +2,7 @@ import tensorflow as tf
 import os
 import matplotlib.pyplot as plt
 
-def build_pipeline(input_image_dir = None, output_image_dir = None, batch_sz = None):
+def build_pipeline(input_image_dir = None, output_image_dir = None, batch_sz = None, repeat_shuffle = None):
 
     with tf.device('/cpu:0'):
         
@@ -24,7 +24,14 @@ def build_pipeline(input_image_dir = None, output_image_dir = None, batch_sz = N
 
         #Create the dataset from slices of the input and output filenames
         dataset = tf.data.Dataset.from_tensor_slices((input_list, output_list))
-    
+        
+        #shuffle the data with a buffer size equal to the length of the dataset
+        #(this ensures good shuffling)
+        dataset = dataset.shuffle(len(input_list))
+
+        if repeat_shuffle is True:
+            dataset = dataset.repeat()
+
         #Parse the images from filename to the pixel values.
         #Use multiple threads to improve the speed of preprocessing
         dataset = dataset.map(process_path, num_parallel_calls=4)
@@ -50,10 +57,9 @@ def build_pipeline(input_image_dir = None, output_image_dir = None, batch_sz = N
             plt.show()
 
     
-        #cache, shuffle the data with a buffer size equal to the length of the dataset
-        #(this ensures good shuffling), batch the images and prefetch one batch
+        #batch the images and prefetch one batch
         #to make sure that a batch is ready to be served at all time
-        dataset = dataset.cache().shuffle(len(input_list)).batch(batch_sz).prefetch(1)
+        dataset = dataset.batch(batch_sz).prefetch(1)
 
         print('\n DATASET READY AND RETURNED \n')
     
