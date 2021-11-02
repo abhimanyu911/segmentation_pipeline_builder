@@ -8,3 +8,7 @@ Change Log
 0.0.2 (02/11/2021)
 -------------------
 - Second Release
+
+0.0.3 (02/11/2021)
+-------------------
+- Third Release: Option to repeat() shuffling for multiple epochs enabled.
