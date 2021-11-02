@@ -1,8 +1,8 @@
 Metadata-Version: 1.1
 Name: dataset-builder-for-segmentation
-Version: 0.0.2
+Version: 0.0.3
 Summary: A dataset pipeline builder for semantic image segmentation
-Home-page: UNKNOWN
+Home-page: https://github.com/abhimanyu911/segmentation_pipeline_builder
 Author: Abhimanyu Borthakur
 Author-email: abhimanyuborthakur@hotmail.com
 License: MIT
@@ -19,6 +19,10 @@ Description: This is a library with one module to help you build a tf.data Datas
         0.0.2 (02/11/2021)
         -------------------
         - Second Release
+        
+        0.0.3 (02/11/2021)
+        -------------------
+        - Third Release: Option to repeat() shuffling for multiple epochs enabled.
 Keywords: dataset builder
 Platform: UNKNOWN
 Classifier: Development Status :: 5 - Production/Stable
